@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Input File</title>
+  </head>
+  <body>
+    <h3>Different types of inputs</h3>
+    <form>
+      <label>Name:</label>
+      <input type="text" id="name" name="name" />
+      <input type="button" value="Submit" />
+      <br />
+      <label>Please select your favourite fruit:</label>
+      <input type="checkbox" id="one" name="apples" />
+      <input type="checkbox" id="two" name="oranges" />
+      <div>
+        <input type="color" value="black" />
+      </div>
+      <label for="start"> Start date: </label>
+      <input type="date" id="date" value="2023-17-01" />
+      <div>
+        <label>Today's Date</label>
+        <input type="datetime-local" id="today" />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input
+          type="email"
+          id="email"
+          pattern=".+@globex\.com"
+          size="30"
+          required
+        />
+      </div>
+      <div>
+        <label>File:</label>
+        <input type="file" id="file" value="" />
+      </div>
+      <fieldset>
+        <legend>Select any radio button</legend>
+        <div>
+          <input type="radio" id="radio1" value="one" name="radio" checked />
+          <label> One</label>
+          <input type="radio" id="radio2" value="two" name="radio" />
+          <label> Two</label>
+          <input type="radio" id="radio3" value="three" name="radio" />
+          <label> Three</label>
+        </div>
+      </fieldset>
+      <div>
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+      </div>
+      <div>
+        <label for="url">Enter an https://url</label>
+        <input
+          type="url"
+          id="url"
+          placeholder="abc@gmail.com"
+          pattern="https://.*"
+          size="30"
+          required
+        />
+      </div>
+    </form>
+  </body>
+</html>
